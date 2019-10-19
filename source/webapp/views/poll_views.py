@@ -46,3 +46,10 @@ class PollUpdateView(UpdateView):
 
     def get_success_url(self):
         return reverse('poll_view', kwargs={'pk': self.object.pk})
+
+
+class PollDeleteView(DeleteView):
+    model = Poll
+    template_name = 'poll/delete.html'
+    context_object_name = 'poll'
+    success_url = reverse_lazy('index')

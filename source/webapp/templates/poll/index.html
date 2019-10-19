@@ -10,7 +10,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-          <a class="new_review_btn" href="{% url 'poll_add' %}">+ Create New Poll <span class="sr-only">(current)</span></a>
+          <a class="new_review_btn" href="{% url 'poll_add' %}">+ New Poll <span class="sr-only">(current)</span></a>
 {#          <a class="new_review_btn" href="{% url 'status_index' %}">Statuses <span class="sr-only">(current)</span></a>#}
 {#          <a class="new_review_btn" href="{% url 'type_index' %}">Types <span class="sr-only">(current)</span></a>#}
 {#          <a class="new_review_btn" href="{% url 'project_index' %}">Projects <span class="sr-only">(current)</span></a>#}
@@ -37,7 +37,7 @@
                     <h6 class="card-subtitle mb-2 text-muted">Created: {{ poll.created_at|date:'d.m.Y H:i:s' }}</h6>
                     <div class="card_links mt-auto row justify-content-center">
                         <a href="{% url "poll_update" poll.pk %}" class="edit_icon"><i class="fas fa-pencil-alt"></i></a>
-{#                        <a href="{% url "issue_delete" issue.pk %}" class="card-link trash_can"><i class="fas fa-trash-alt"></i></a>#}
+                        <a href="{% url "poll_delete" poll.pk %}" class="card-link trash_can"><i class="fas fa-trash-alt"></i></a>
                     </div>
                 </div>
             </div>
