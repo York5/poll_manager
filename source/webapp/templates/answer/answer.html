@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block menu %}
+    <nav class="navbar custom_nav navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="{% url 'index' %}">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+{% endblock %}
+{% block title %}{{ poll.question }}{% endblock %}
+{% block content %}
+    <h1 class="main_header"><b>{{ poll.question}}</b></h1>
+    <form action="" method="POST" id="add_answer">
+        {% include 'partial/form.html' with button_text='Add' %}
+    </form>
+{#    <div class="btn-toolbar justify-content-between mt-4" role="toolbar" aria-label="Toolbar with button groups">#}
+{#      <div class="btn-group-vertical" role="group" aria-label="First group">#}
+{#          {% for choice in choices %}#}
+{#              <div class="radio">#}
+{#                  <label><input type="radio" name="optradio" checked> {{ choice.text }}</label>#}
+{#              </div>#}
+{#          {% endfor %}#}
+{#      </div>#}
+{#    </div>#}
+{% endblock %}

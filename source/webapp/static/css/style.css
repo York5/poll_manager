@@ -153,3 +153,13 @@ body {
 .choice_crud_block {
     margin-left: auto;
 }
+.answer_flex {
+    display: flex;
+}
+.answer_flex a {
+    margin-left: auto;
+    margin-right: auto;
+}
+.answer_index {
+    margin-bottom: 10px;
+}

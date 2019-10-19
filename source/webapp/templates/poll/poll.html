@@ -16,6 +16,9 @@
     <div class="date_flex">
         <h6 class="text-muted">Created: {{ poll.created_at|date:'d.m.Y H:i:s' }}</h6>
     </div>
+    <div class="answer_flex">
+        <a href="{% url 'answer_add' poll.pk %}"><button type="button" class="btn btn-success answer_button">Answer</button></a>
+    </div>
     <div class="btn-toolbar justify-content-between mt-4" role="toolbar" aria-label="Toolbar with button groups">
       <div class="btn-group-vertical" role="group" aria-label="First group">
           {% for choice in choices %}
