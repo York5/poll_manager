@@ -3,8 +3,8 @@
 {% block menu %}
     <nav class="navbar custom_nav navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="{% url 'index' %}">Home</a>
-{#        <a class="nav-link new_nav_btn" href="{% url 'issue_delete' issue.pk %}">Delete<span class="sr-only">(current)</span></a>#}
-{#        <a class="nav-link new_nav_btn" href="{% url 'issue_update' issue.pk %}">Edit<span class="sr-only">(current)</span></a>#}
+        <a class="nav-link new_nav_btn" href="{% url 'poll_delete' poll.pk %}">Delete<span class="sr-only">(current)</span></a>
+        <a class="nav-link new_nav_btn" href="{% url 'poll_update' poll.pk %}">Edit<span class="sr-only">(current)</span></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -20,9 +20,14 @@
       <div class="btn-group-vertical" role="group" aria-label="First group">
           {% for choice in choices %}
               <div class="radio">
-                  <label><input type="radio" name="optradio" checked>{{ choice.text }}</label>
+                  <a href="{% url "choice_update" choice.pk %}" class="edit_icon choice_edit"><i class="fas fa-pencil-alt"></i></a>
+                  <a href="{% url "choice_delete" choice.pk %}" class="card-link choice_delete trash_can"><i class="fas fa-trash-alt"></i></a>
+                  <label><input type="radio" name="optradio" checked> {{ choice.text }}</label>
               </div>
           {% endfor %}
       </div>
     </div>
+    <form action="{% url 'poll_choice_create' poll.pk %}" method="POST" id="add_choice">
+        {% include 'partial/form.html' with button_text='Add' %}
+    </form>
 {% endblock %}

@@ -1,3 +1,4 @@
+{% load widget_tweaks %}
 {% csrf_token %}
 
 {% for error in form.non_field_errors %}
@@ -5,11 +6,21 @@
 {% endfor %}
 
 {% for field in form %}
-    <p><label for="{{ field.id_for_label }}">{{ field.label }}</label></p>
-    <p>{{ field }}</p>
+    <div class="form-group">
+    <p><label for="{{ field.id_for_label }}">{{ field.label }}
+       {% if field.field.required %}
+           <span class="field_required">*</span>
+       {% endif %}
+    </label></p>
+    {% if field.errors %}
+        <p>{{ field|add_class:'field_error form-control' }}</p>
+    {% else %}
+        <p>{{ field|attr:"rows:3"|add_class:'form-control w-50' }}</p>
+    {% endif %}
     {% for error in field.errors %}
-        <p class="form-error">{{ error }}</p>
+       <p class="form-error">{{ error }}</p>
     {% endfor %}
+    </div>
 {% endfor %}
 
-<p><input type="submit" value="{{ button_text }}"></p>
+<p><input type="submit" value="{{button_text}}"></p>
