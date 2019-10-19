@@ -1,0 +1,517 @@
+[
+{
+  "model": "webapp.poll",
+  "pk": 1,
+  "fields": {
+    "question": "Have you used PyCharm before?",
+    "created_at": "2019-10-19T06:14:00.928Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 2,
+  "fields": {
+    "question": "Which is your favorite classic Christmas song?",
+    "created_at": "2019-10-19T06:16:58.048Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 3,
+  "fields": {
+    "question": "What\u2019s your favorite classic horror film?",
+    "created_at": "2019-10-19T06:25:55.293Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 4,
+  "fields": {
+    "question": "When passing by a reflective surface, I\u2026..",
+    "created_at": "2019-10-19T06:26:47.259Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 5,
+  "fields": {
+    "question": "Which superpower would you like to have?",
+    "created_at": "2019-10-19T06:27:52.383Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 6,
+  "fields": {
+    "question": "Have you ever\u2026",
+    "created_at": "2019-10-19T06:28:44.656Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 7,
+  "fields": {
+    "question": "A farmer has 17 sheep, all of them but 8 die. How many sheep are still standing?",
+    "created_at": "2019-10-19T06:33:25.422Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 8,
+  "fields": {
+    "question": "Which of the following Rumor about you among your friends you would feel embarrassed with?",
+    "created_at": "2019-10-19T06:36:28.993Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 9,
+  "fields": {
+    "question": "If you were to eat only one item for a week. Which one of the following you choose?",
+    "created_at": "2019-10-19T06:37:27.223Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 10,
+  "fields": {
+    "question": "If you were to write a best selling book. What would be the name of that book?\u200c",
+    "created_at": "2019-10-19T06:39:30.877Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 11,
+  "fields": {
+    "question": "Which of the following dare you can accept?",
+    "created_at": "2019-10-19T06:41:03.563Z"
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 1,
+  "fields": {
+    "text": "Yes, I am a power user",
+    "poll": 1
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 2,
+  "fields": {
+    "text": "Yes, but only a little",
+    "poll": 1
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 3,
+  "fields": {
+    "text": "I\u2019ve only seen others use it",
+    "poll": 1
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 4,
+  "fields": {
+    "text": "I\u2019ve never used or seen PyCharm",
+    "poll": 1
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 5,
+  "fields": {
+    "text": "All I Want for Christmas is You",
+    "poll": 2
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 6,
+  "fields": {
+    "text": "Driving Home for Christmas",
+    "poll": 2
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 7,
+  "fields": {
+    "text": "Jingle Bell Rock",
+    "poll": 2
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 8,
+  "fields": {
+    "text": "Last Christmas",
+    "poll": 2
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 9,
+  "fields": {
+    "text": "Rudolph the Red-Nosed Reindeer",
+    "poll": 2
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 10,
+  "fields": {
+    "text": "Dracula",
+    "poll": 3
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 11,
+  "fields": {
+    "text": "Frankenstein",
+    "poll": 3
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 12,
+  "fields": {
+    "text": "Psycho",
+    "poll": 3
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 13,
+  "fields": {
+    "text": "The Wolf Man",
+    "poll": 3
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 14,
+  "fields": {
+    "text": "No thanks, I prefer Finding Nem",
+    "poll": 3
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 15,
+  "fields": {
+    "text": "Use it to see if anyone is following me",
+    "poll": 4
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 16,
+  "fields": {
+    "text": "Check myself out, doesn\u2019t everyone?",
+    "poll": 4
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 17,
+  "fields": {
+    "text": "Use to contemplate the deeper meaning of life",
+    "poll": 4
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 18,
+  "fields": {
+    "text": "Mind reading",
+    "poll": 5
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 19,
+  "fields": {
+    "text": "Invisibility",
+    "poll": 5
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 20,
+  "fields": {
+    "text": "Teleportation",
+    "poll": 5
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 21,
+  "fields": {
+    "text": "Flying",
+    "poll": 5
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 22,
+  "fields": {
+    "text": "I already have a superpower",
+    "poll": 5
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 23,
+  "fields": {
+    "text": "Had a crush on your boss?",
+    "poll": 6
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 24,
+  "fields": {
+    "text": "Peed in the swimming pool?",
+    "poll": 6
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 25,
+  "fields": {
+    "text": "Taken shampoo and conditioner from hotels?",
+    "poll": 6
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 26,
+  "fields": {
+    "text": "Told barefaced lies to your mother?",
+    "poll": 6
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 27,
+  "fields": {
+    "text": "Denied receiving work emails when in fact you did?",
+    "poll": 6
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 28,
+  "fields": {
+    "text": "8",
+    "poll": 7
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 29,
+  "fields": {
+    "text": "9",
+    "poll": 7
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 30,
+  "fields": {
+    "text": "25",
+    "poll": 7
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 31,
+  "fields": {
+    "text": "35",
+    "poll": 7
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 32,
+  "fields": {
+    "text": "You have the habit of talking to your rooms wall",
+    "poll": 8
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 33,
+  "fields": {
+    "text": "You see dead people and can also talk to them\u200c",
+    "poll": 8
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 34,
+  "fields": {
+    "text": "You drink your own urine\u200c",
+    "poll": 8
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 35,
+  "fields": {
+    "text": "Without listening few lullabies you can't go to sleep",
+    "poll": 8
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 36,
+  "fields": {
+    "text": "Every night you pee in the bed\u200c",
+    "poll": 8
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 37,
+  "fields": {
+    "text": "\u200cChocolate",
+    "poll": 9
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 38,
+  "fields": {
+    "text": "Eggs",
+    "poll": 9
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 39,
+  "fields": {
+    "text": "Steak",
+    "poll": 9
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 40,
+  "fields": {
+    "text": "Potato",
+    "poll": 9
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 41,
+  "fields": {
+    "text": "Cheese",
+    "poll": 9
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 42,
+  "fields": {
+    "text": "How i stop blasting 1000 farts a day - My story\u200c",
+    "poll": 10
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 43,
+  "fields": {
+    "text": "1000 ways to get slapped from random people\u200c",
+    "poll": 10
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 44,
+  "fields": {
+    "text": "How to cheat your wife without getting caught",
+    "poll": 10
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 45,
+  "fields": {
+    "text": "1000 ways i use to make people uncomfortable in my presence",
+    "poll": 10
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 46,
+  "fields": {
+    "text": "\u200cNot to cut your nails for 100 days",
+    "poll": 11
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 47,
+  "fields": {
+    "text": "\u200cWearing underwear over pants for 1 week",
+    "poll": 11
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 48,
+  "fields": {
+    "text": "Not eating food for 20 days",
+    "poll": 11
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 49,
+  "fields": {
+    "text": "Not to bath for 20 days",
+    "poll": 11
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 50,
+  "fields": {
+    "text": "Not to use internet for a month",
+    "poll": 11
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 1,
+  "fields": {
+    "poll": 11,
+    "choice": 49,
+    "created_at": "2019-10-19T12:21:23.278Z"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$rt8B9YvYdEAd$E58MYP7/XBrRALc1qb8txlj7zvXjmfLhhjvoYyESWRw=",
+    "last_login": "2019-10-19T06:05:30.236Z",
+    "is_superuser": true,
+    "username": "mike",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2019-10-19T05:35:29.217Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]

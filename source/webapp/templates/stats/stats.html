@@ -3,9 +3,6 @@
 {% block menu %}
     <nav class="navbar custom_nav navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="{% url 'index' %}">Home</a>
-        <a class="nav-link new_nav_btn" href="{% url 'poll_delete' poll.pk %}">Delete<span class="sr-only">(current)</span></a>
-        <a class="nav-link new_nav_btn" href="{% url 'poll_update' poll.pk %}">Edit<span class="sr-only">(current)</span></a>
-        <a class="nav-link new_nav_btn" href="">View Stats<span class="sr-only">(current)</span></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -16,9 +13,6 @@
     <h1 class="main_header"><b>{{ poll.question}}</b></h1>
     <div class="date_flex">
         <h6 class="text-muted">Created: {{ poll.created_at|date:'d.m.Y H:i:s' }}</h6>
-    </div>
-    <div class="answer_flex">
-        <a href="{% url 'answer_add' poll.pk %}"><button type="button" class="btn btn-success answer_button">Answer</button></a>
     </div>
     <div class="btn-toolbar justify-content-between mt-4" role="toolbar" aria-label="Toolbar with button groups">
       <div class="btn-group-vertical" role="group" aria-label="First group">
@@ -31,7 +25,4 @@
           {% endfor %}
       </div>
     </div>
-    <form action="{% url 'poll_choice_create' poll.pk %}" method="POST" id="add_choice">
-        {% include 'partial/form.html' with button_text='Add' %}
-    </form>
 {% endblock %}

@@ -1,6 +1,3 @@
-from datetime import timedelta, datetime
-from urllib.parse import urlencode
-from django.db.models import Q
 from webapp.forms import PollForm, ChoiceForm
 from django.urls import reverse, reverse_lazy
 from webapp.models import Poll

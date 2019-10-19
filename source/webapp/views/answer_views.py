@@ -1,10 +1,8 @@
-from django.http import Http404
 from django.shortcuts import get_object_or_404, redirect
-from django.urls import reverse, reverse_lazy
 
 from webapp.forms import AnswerForm
 from webapp.models import Answer, Poll, Choice
-from django.views.generic import ListView, DetailView, CreateView, UpdateView
+from django.views.generic import CreateView
 
 
 class AnswerCreateView(CreateView):
@@ -17,7 +15,7 @@ class AnswerCreateView(CreateView):
         return super().dispatch(request, *args, **kwargs)
 
     def form_valid(self, form):
-        self.poll.choices.create(**form.cleaned_data)
+        self.poll.answers.create(**form.cleaned_data)
         return redirect('poll_view', pk=self.poll.pk)
 
     def get_context_data(self, **kwargs):

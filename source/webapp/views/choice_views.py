@@ -1,12 +1,9 @@
-from datetime import timedelta, datetime
-from urllib.parse import urlencode
-from django.db.models import Q
 from django.shortcuts import redirect, get_object_or_404
 
-from webapp.forms import PollForm, ChoiceForm
-from django.urls import reverse, reverse_lazy
+from webapp.forms import ChoiceForm
+from django.urls import reverse
 from webapp.models import Choice, Poll
-from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
+from django.views.generic import CreateView, UpdateView, DeleteView
 
 
 class ChoiceInPollCreateView(CreateView):
